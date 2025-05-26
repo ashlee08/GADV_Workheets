@@ -2,21 +2,17 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace ProjectNamespace1
-{
-    public class DataTypesDemo : MonoBehaviour
+public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Data Types Demo");
+        Debug.Log("This script is attached to a GameObject!");
     }
 
     // Update is called once per frame
     void Update()
     {
-
-    }
-
+        
     }
 }
