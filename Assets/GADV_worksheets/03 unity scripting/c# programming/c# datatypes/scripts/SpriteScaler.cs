@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpriteScaler : MonoBehaviour
+namespace GADVDataTypes
 {
-    // Start is called before the first frame update
-    void Start()
+    public class SpriteScaler : MonoBehaviour
     {
-        
-    }
+        private Transform spriteTransform;
+        private string scale = "2.0";
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        void Start()
+        {
+            spriteTransform = GetComponent<Transform>();
+
+            spriteTransform.localScale = new Vector3(float.Parse(scale), float.Parse(scale), 1f);
+        }
     }
 }
+
